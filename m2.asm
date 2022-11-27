@@ -1,3 +1,4 @@
+;输出月
 PUBLIC M2
 
 DATASEG SEGMENT
