@@ -1,21 +1,21 @@
-;返回DOS系统
+;宏-返回DOS系统
 OK MACRO
     MOV AH,4CH
     INT 21H
 ENDM
-;回车换行
+;宏-回车换行
 NEXT MACRO
     MOV DX,OFFSET CRLF
     MOV AH,09H
     INT 21H
 ENDM
-;打印分隔符
+;宏-打印分隔符
 GAP MACRO
     MOV DX,OFFSET OUTPUT
     MOV AH,09H
     INT 21H
 ENDM
-;打印提示输入信息
+;宏-打印提示输入信息
 PS MACRO
     MOV DX,OFFSET INPUT
     MOV AH,09H
